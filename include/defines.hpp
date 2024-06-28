@@ -155,7 +155,7 @@
 #if defined(WIFI_USE_SAMD)
 #undef WIFI_USE_SAMD
 #endif
-#define WIFI_USE_SAMD true
+
 #endif
 
 #if (defined(ARDUINO_SAM_DUE) || defined(__SAM3X8E__))
