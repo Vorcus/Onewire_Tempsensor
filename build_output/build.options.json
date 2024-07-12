@@ -1,0 +1,11 @@
+{
+  "additionalFiles": "..\\..,..\\..,..\\..,..\\..,..\\..,..\\..,..\\..,..\\..,..\\..,..\\..,..\\..,..\\..,..\\..,..\\..",
+  "builtInToolsFolders": "",
+  "compiler.optimization_flags": "",
+  "customBuildProperties": "",
+  "fqbn": "adafruit:samd:adafruit_feather_m0:opt=small,usbstack=arduino,debug=off",
+  "hardwareFolders": "C:\\Users\\Trey\\AppData\\Local\\Arduino15\\packages",
+  "otherLibrariesFolders": "C:\\Users\\Trey\\Documents\\Arduino\\libraries",
+  "runtime.ide.version": "10607",
+  "sketchLocation": "C:\\Users\\Trey\\Documents\\git\\Onewire_Tempsensor\\src"
+}

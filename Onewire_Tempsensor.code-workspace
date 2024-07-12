@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"name": "Onewire_Temp_Logger",
+			"path": "../Onewire_Temp_Logger"
+		}
+	],
+	"settings": {}
+}
