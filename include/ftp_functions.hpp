@@ -1,4 +1,3 @@
-// #include "defines.hpp"
 #include "gps_functions.hpp"
 #include "rtc_functions.hpp"
 #include "onewire_functions.hpp"

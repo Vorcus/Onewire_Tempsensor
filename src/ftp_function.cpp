@@ -11,11 +11,8 @@ FTPClient_Generic ftp(ftp_server, ftp_user, ftp_pass, 60000);
 
 void initFTP()
 {
-    // Serial.print(F("\nStarting FTPClient_ListFiles on "));
-    // Serial.print(BOARD_NAME);
-    // Serial.print(F(" with "));
-    // Serial.println(SHIELD_TYPE);
-    // Serial.println(FTPCLIENT_GENERIC_VERSION);
+    // code to initialize the FTP client
+    // currently nothing is needed here
 }
 
 void FTPAppendLine(String line)
