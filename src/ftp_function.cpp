@@ -1,11 +1,18 @@
 #include "ftp_functions.hpp"
 #include "ftp_client.hpp"
+#include "rtc_functions.hpp"
 
 char ftp_server[] = "172.18.204.75";
 char ftp_user[] = "raspy";
 char ftp_pass[] = "5RaspiFoxes";
 char dirname[] = "/files";
-char filename[] = "datalog.txt";
+char filename()
+{
+    RTC_PCF8523 rtc;
+    DateTime now = rtc.now();
+    sprintf(fileName, "%04lu%02lu%02lu.csv", now.year(), now.month(), now.day());
+    return fileName[13];
+}
 
 FTPClient_Generic ftp(ftp_server, ftp_user, ftp_pass, 60000);
 
@@ -20,7 +27,7 @@ void FTPAppendLine(String line)
     ftp.OpenConnection();
     ftp.ChangeWorkDir(dirname);
     ftp.InitFile(COMMAND_XFER_TYPE_ASCII);
-    ftp.AppendFile(filename);
+    ftp.AppendFile(fileName);
     ftp.Write(line.c_str());
     ftp.Write("\n");
     ftp.CloseFile();

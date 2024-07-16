@@ -5,6 +5,8 @@
 
 #define USING_VSFTP_SERVER true
 
+char fileName[13];
+
 void initFTP();
 void FTPAppendLine(String line);
 void FTPLogTemperatures();
