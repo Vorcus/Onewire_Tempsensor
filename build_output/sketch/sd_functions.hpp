@@ -4,6 +4,8 @@
 #include "rtc_functions.hpp"
 #include "onewire_functions.hpp"
 
+char fileName[13];
+
 void initSD();
 void SDAppendLine(String line);
 void SDLogTemperatures();

@@ -2,7 +2,6 @@
 
 const int chipSelect = 10;
 File DataLog;
-char fileName[] = "datalog.txt";
 
 void initSD()
 {

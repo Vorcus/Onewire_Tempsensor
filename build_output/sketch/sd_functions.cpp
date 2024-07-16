@@ -3,7 +3,13 @@
 
 const int chipSelect = 10;
 File DataLog;
-char fileName[] = "datalog.txt";
+char filename()
+{
+    RTC_PCF8523 rtc;
+    DateTime now = rtc.now();
+    sprintf(fileName, "%04lu%02lu%02lu.csv", now.year(), now.month(), now.day());
+    return fileName[13];
+}
 
 void initSD()
 {
